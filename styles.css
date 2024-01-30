@@ -1,0 +1,10 @@
+body {
+    overflow-y: hidden;
+}
+
+.background {
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)), url('images/image-background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
