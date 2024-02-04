@@ -91,6 +91,7 @@ function next() {
         lastScore = null;
         console.table(reportAcudits);
     }
+    changeImage();
 }
 //NIVELL2
 //Exercici4
@@ -143,4 +144,18 @@ function fetchJoke() {
         countApi = 0;
         return fetchChuckJoke();
     }
+}
+//NIVELL 3
+//Exercici 6
+const imagesArray = ["blob_1", "blob_2", "blob_3", "blob_4", "blob_5", "blob_6", "blob_7", "blob_8", "blob_9", "blob_10"];
+let imagesIndex = 0;
+function changeImage() {
+    imagesIndex += 1;
+    let nextImage = `images/blob/${imagesArray[imagesIndex]}.svg`;
+    let changeBackground = document.getElementById('changeBg');
+    if (changeBackground) {
+        changeBackground.style.backgroundImage = `url('${nextImage}')`;
+    }
+    imagesIndex === imagesArray.length - 1 ?
+        imagesIndex = -1 : imagesIndex = imagesIndex;
 }

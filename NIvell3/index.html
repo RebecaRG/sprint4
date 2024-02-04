@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid position-relative vh-100">
+
+        <div class="position-absolute  border border-2 d-flex rounded-pill shadow mt-3">
+            <div id="iconPrint" class=" border-end border-1 "></div>
+            <div id="tempPrint" class="px-2 align-items-center d-flex align-items-center"></div>
+        </div>
+
+        <div id="changeBg" class="background p-5 ">
+            <div
+                class=" card border border-0 bg-transparent text-center col-10 col-md-9 col-lg-7 col-xxl-5 mx-auto mt-5 mt-sm-0  p-sm-5 text-dark flex-column">
+                <div class="card-body border border-0 mb-md-5 mb-sm-0 p-md-5">
+                    <h3 class="card-title  bg-transparent pb-5 p-sm-0 mb-5 text-warning pt-4">Preparat per riure?</h3>
+                    <p id="jokePrint" class="card-text card-height pt-5 pt-sm-0 mt-5 mt-sm-0"></p>
+                </div>
+
+                <div class="card-footer border border-0 bg-transparent ">
+                    <div>
+                        <button type="submit" class="btn btn-link text-decoration-none" onclick="punts(1)"><img
+                                src="images/triste.png" alt="Triste"></button>
+                        <button type="submit" class="btn btn-link text-decoration-none" onclick="punts(2)"><img
+                                src="images/neutral.png" alt="Neutral"></button>
+                        <button type="submit" class="btn btn-link text-decoration-none" onclick="punts(3)"><img
+                                src="images/risa.png" alt="Risa"></button>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="my-3 btn btn btn-warning px-4 rounded rounded-pill shadow"
+                            onclick="next()">Següent acudit</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- JS -->
+    <script src="./build/index.js"></script>
+
+</body>
+
+</html>

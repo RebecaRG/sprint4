@@ -105,6 +105,7 @@ function next(): void {
         lastScore = null;
         console.table(reportAcudits);
     }
+    changeImage();
 }
 
 //NIVELL2
@@ -178,3 +179,24 @@ function fetchJoke(): Promise<Joke> {
         return fetchChuckJoke();
     }
 }
+
+//NIVELL 3
+//Exercici 6
+
+const imagesArray: string[] = ["blob_1", "blob_2", "blob_3", "blob_4", "blob_5", "blob_6", "blob_7", "blob_8", "blob_9", "blob_10"];
+
+let imagesIndex:number = 0;
+
+function changeImage():void{
+
+    imagesIndex += 1;
+    let nextImage: string = `images/blob/${imagesArray[imagesIndex]}.svg`;
+    let changeBackground: HTMLElement | null  = document.getElementById('changeBg');
+    
+    if(changeBackground){
+        changeBackground.style.backgroundImage = `url('${nextImage}')`;
+    }
+    imagesIndex === imagesArray.length -1 ? 
+        imagesIndex = -1 :  imagesIndex = imagesIndex;
+}
+

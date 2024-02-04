@@ -1,0 +1,48 @@
+body {
+    overflow-y: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Nivell_3 */
+.background {
+    background: url('images/blob/blob_1.svg');
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.card-height{
+    height: 150px;
+}
+
+#changeBg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+} 
+
+@media (max-width: 576px) {
+    .card-height{
+        height: 350px;
+    }
+    };
+
+/* @media (max-width: 768px) {
+    
+        .card-height{
+            height: 500px;
+        }
+    }; */
+
+
+/* Nivell_1_2 */
+/* .background {
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)), url('images/image-background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+} */
+
+/* linea entre temperatura i icona temps */
+
